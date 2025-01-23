@@ -18,6 +18,6 @@ public class L2Q1 {
                     " of the two numbers " + number1 + " and " + number2);
         }
 
-        sc.close();  
+        sc.close();
     }
 }
