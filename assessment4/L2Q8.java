@@ -27,3 +27,21 @@ public class l2q8 {
     public static String findYoungest(String[] friends, int[] ages) {
         int minAgeIndex = 0;
         for (int i = 1; i < ages.length; i++) {
+            if (ages[i] < ages[minAgeIndex]) {
+                minAgeIndex = i;
+            }
+        }
+        return friends[minAgeIndex];
+    }
+
+    public static String findTallest(String[] friends, double[] heights) {
+        int maxHeightIndex = 0;
+        for (int i = 1; i < heights.length; i++) {
+            if (heights[i] > heights[maxHeightIndex]) {
+                maxHeightIndex = i;
+            }
+        }
+        return friends[maxHeightIndex];
+    }
+}
+
